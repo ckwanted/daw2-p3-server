@@ -8,11 +8,11 @@ public class CodeGenerator {
 		
 		WSDLToJava.main(new String[] {
 			"-server",
-			"-d", "src/main/java",
-			"src/main/resources/SOAPService.wsdl"
+			"-d", "src",
+			"src/main/resources/SimpleService.wsdl"
 		});
 		
-		System.out.println("Servidor Lanzado ...");
+		System.out.println("Archivos generados correctamente ...");
 
 	}
 
