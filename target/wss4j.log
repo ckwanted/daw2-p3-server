@@ -1,0 +1,314 @@
+0    [main] DEBUG org.apache.cxf.common.logging.LogUtils  - Using org.apache.cxf.common.logging.Log4jLogger for logging.
+229  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading plugin jar:file:/Users/ckwanted/.m2/repository/org/apache/cxf/cxf-bundle/3.0.0-milestone2/cxf-bundle-3.0.0-milestone2.jar!/META-INF/tools-plugin.xml
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Found 3 frontends in <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <jaxws> frontend from <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <jaxws21> frontend from <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <cxf> frontend from <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Found 10 databindings in <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <source> databinding from <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <domsource> databinding from <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <staxsource> databinding from <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <saxsource> databinding from <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <jaxb> databinding from <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <xmlbeans> databinding from <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <jibx> databinding from <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <sdo> databinding from <default> plugin.
+252  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <sdo-dynamic> databinding from <default> plugin.
+253  [main] DEBUG org.apache.cxf.tools.wsdlto.core.PluginLoader  - Loading <sdo-static> databinding from <default> plugin.
+394  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandLineParser  - Parsing arguments: -server -d src/main/java src/main/resources/SOAPService.wsdl 
+403  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandLineParser  - Found 0 alternative forms of usage, will use default form
+407  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Form  - Accepting token stream for form of usage: default, tokens are [ -server -d src/main/java src/main/resources/SOAPService.wsdl ]
+407  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Form  - Position is: 0
+407  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Reading token -server
+407  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Reading token -d
+407  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Reading token src/main/java
+407  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Reading token src/main/resources/SOAPService.wsdl
+407  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Form  - Args is available
+407  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.OptionGroup  - Accepting token stream for optionGroup: options, tokens are now [ -server -d src/main/java src/main/resources/SOAPService.wsdl ], running through 37 options
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -fe
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -frontend
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -db
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -databinding
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -wv
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -p
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -sn
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -b
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -reserveClass
+408  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -catalog
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -d
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -compile
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -classdir
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -impl
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -server
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -server
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - Matches a switch!!!
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Reading token -server
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.OptionGroup  - Option server accepted the token
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Form  - Args is available
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.OptionGroup  - Accepting token stream for optionGroup: options, tokens are now [ -d src/main/java src/main/resources/SOAPService.wsdl ], running through 37 options
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -d
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -fe
+409  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -frontend
+410  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -d
+411  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -db
+411  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -databinding
+411  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -d
+411  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -wv
+411  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -d
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -p
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -d
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -sn
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -d
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -b
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -d
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -reserveClass
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -d
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -catalog
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token -d
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -d
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - Matches a switch!!!
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Reading token -d
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Reading token src/main/java
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - Setting argument value of option to src/main/java
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.OptionGroup  - Option outputdir accepted the token
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Form  - Args is available
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.OptionGroup  - Accepting token stream for optionGroup: options, tokens are now [ src/main/resources/SOAPService.wsdl ], running through 37 options
+412  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -fe
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -frontend
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -db
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -databinding
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -wv
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -p
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -sn
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -b
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -reserveClass
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -catalog
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -d
+413  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -compile
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -classdir
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -impl
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -server
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -client
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -clientjar
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -all
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -autoNameResolution
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -allowElementReferences
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -aer
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+414  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -defaultValues
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -ant
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -nexclude
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -exsh
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -noTypes
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -dns
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -dex
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -validate
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -keep
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -wsdlLocation
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -xjc
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+415  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -asyncMethods
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -bareMethods
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -mimeMethods
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -noAddressBinding
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -faultSerialVersionUID
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -encoding
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -exceptionSuper
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -mark-generated
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.OptionGroup  - No option accepted the token, returning
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.OptionGroup  - Accepting token stream for optionGroup: common_options, tokens are now [ src/main/resources/SOAPService.wsdl ], running through 5 options
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -h
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -?
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -help
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -version
+416  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -v
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -verbose
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -V
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -quiet
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -q
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -Q
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - switchArg is -wsdlList
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.OptionGroup  - No option accepted the token, returning
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=unbounded, numMatches currently 0
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=, numMatches currently 0
+417  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=unbounded, numMatches currently 0
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=unbounded, numMatches currently 0
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 1
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 1
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+418  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+423  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+423  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=unbounded, numMatches currently 0
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+424  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=unbounded, numMatches currently 0
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=unbounded, numMatches currently 0
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=unbounded, numMatches currently 0
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=unbounded, numMatches currently 0
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+425  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=, numMatches currently 0
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=, numMatches currently 0
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=, numMatches currently 0
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - For this option, minOccurs= and maxOccurs=1, numMatches currently 0
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Option  - isSatisfied() returning true
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Argument  - Accepting token stream for argument: wsdlurl
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Peeking token src/main/resources/SOAPService.wsdl
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.TokenInputStream  - Reading token src/main/resources/SOAPService.wsdl
+426  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.Form  - Form default is returning true
+526  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandLineParser  - <command xmlns="http://cxf.apache.org/Xutil/Command" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cxf.apache.org/Xutil/Command http://cxf.apache.org/schema/xutil/commnad.xsd">
+<option name="server"/>
+<option name="outputdir">src/main/java</option>
+<argument name="wsdlurl">src/main/resources/SOAPService.wsdl</argument>
+</command>
+
+527  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandDocument  - Getting parameters for help
+554  [main] DEBUG org.apache.cxf.tools.common.toolspec.ToolSpec  - Element with id help is [option: null]
+554  [main] DEBUG org.apache.cxf.tools.common.toolspec.ToolSpec  - local name is option
+554  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandDocument  - Getting parameters for version
+560  [main] DEBUG org.apache.cxf.tools.common.toolspec.ToolSpec  - Element with id version is [option: null]
+560  [main] DEBUG org.apache.cxf.tools.common.toolspec.ToolSpec  - local name is option
+560  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandDocument  - Getting parameters for verbose
+564  [main] DEBUG org.apache.cxf.tools.common.toolspec.ToolSpec  - Element with id verbose is [option: null]
+565  [main] DEBUG org.apache.cxf.tools.common.toolspec.ToolSpec  - local name is option
+565  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandDocument  - Getting parameters for wsdlurl
+565  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandDocument  - Getting parameters for help
+568  [main] DEBUG org.apache.cxf.tools.common.toolspec.ToolSpec  - Element with id help is [option: null]
+568  [main] DEBUG org.apache.cxf.tools.common.toolspec.ToolSpec  - local name is option
+568  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandDocument  - Getting parameters for version
+571  [main] DEBUG org.apache.cxf.tools.common.toolspec.ToolSpec  - Element with id version is [option: null]
+571  [main] DEBUG org.apache.cxf.tools.common.toolspec.ToolSpec  - local name is option
+572  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandDocument  - Getting parameter server
+572  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandDocument  - Getting parameters for server
+572  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandDocument  - Getting parameter outputdir
+572  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandDocument  - Getting parameters for outputdir
+572  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandDocument  - Getting parameter wsdlurl
+572  [main] DEBUG org.apache.cxf.tools.common.toolspec.parser.CommandDocument  - Getting parameters for wsdlurl
+685  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <org.apache.cxf.transport.http.asyncclient.AsyncHTTPConduitFactory/bus> type <interface org.apache.cxf.Bus>
+686  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <null> type <interface org.apache.cxf.Bus>
+737  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+737  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <null> type <interface org.apache.cxf.Bus>
+865  [main] DEBUG org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder  - Registering : org.apache.cxf.binding.xml.wsdl11.HttpAddressPlugin for type: xml-javax.wsdl.Port
+866  [main] DEBUG org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder  - Registering : org.apache.cxf.binding.soap.wsdl11.SoapAddressPlugin for type: soap-javax.wsdl.Port
+867  [main] DEBUG org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder  - Registering : org.apache.cxf.binding.xml.wsdl11.XmlIoPlugin for type: xml-javax.wsdl.BindingOutput
+867  [main] DEBUG org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder  - Registering : org.apache.cxf.binding.xml.wsdl11.XmlBindingPlugin for type: xml-javax.wsdl.Binding
+867  [main] DEBUG org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder  - Registering : org.apache.cxf.transport.jms.wsdl11.JmsTransportPlugin for type: jms-javax.wsdl.Port
+868  [main] DEBUG org.apache.cxf.tools.wsdlto.core.WSDLDefinitionBuilder  - Registering : org.apache.cxf.binding.xml.wsdl11.XmlIoPlugin for type: xml-javax.wsdl.BindingInput
+979  [main] DEBUG org.apache.cxf.tools.validator.internal.SchemaValidator  - Validate wsdl file:/Users/ckwanted/proyectos-de-programacion/eclipse/daw2-p3-server/src/main/resources/SOAPService.wsdl
+1038 [main] DEBUG org.apache.cxf.wsdl11.WSDLServiceBuilder  - Operation {http://www.example.org/SOAPService/}concat cannot be unwrapped, input message must reference global element declaration with same localname as operation
+1499 [main] DEBUG org.apache.cxf.tools.wsdlto.WSDLToJavaContainer  - Found service validator : org.apache.cxf.tools.wsdlto.frontend.jaxws.validator.WrapperStyleNameCollisionValidator
+1502 [main] DEBUG org.apache.cxf.tools.wsdlto.WSDLToJavaContainer  - Found service validator : org.apache.cxf.binding.xml.XMLFormatValidator
+1503 [main] DEBUG org.apache.cxf.tools.wsdlto.WSDLToJavaContainer  - Found service validator : org.apache.cxf.tools.wsdlto.frontend.jaxws.validator.UniqueBodyValidator
