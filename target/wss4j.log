@@ -1,17 +1,15 @@
 0    [main] DEBUG org.apache.cxf.common.logging.LogUtils  - Using org.apache.cxf.common.logging.Log4jLogger for logging.
-115  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <org.apache.cxf.transport.http.asyncclient.AsyncHTTPConduitFactory/bus> type <interface org.apache.cxf.Bus>
-115  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <null> type <interface org.apache.cxf.Bus>
-178  [main] INFO  org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean  - Creating Service {http://ss.ckwanted.com/}P1ImplService from class com.ckwanted.ss.SimpleService
-332  [main] DEBUG org.apache.cxf.jaxb.JAXBDataBinding  - Created JAXBContext "jar:file:/Users/ckwanted/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.13/jaxb-impl-2.1.13.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.1.13
+237  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <org.apache.cxf.transport.http.asyncclient.AsyncHTTPConduitFactory/bus> type <interface org.apache.cxf.Bus>
+238  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <null> type <interface org.apache.cxf.Bus>
+357  [main] INFO  org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean  - Creating Service {http://ss.ckwanted.com/}p1ImplService from class com.ckwanted.ss.SimpleService
+588  [main] DEBUG org.apache.cxf.jaxb.JAXBDataBinding  - Created JAXBContext "jar:file:/Users/ckwanted/.m2/repository/com/sun/xml/bind/jaxb-impl/2.1.13/jaxb-impl-2.1.13.jar!/com/sun/xml/bind/v2/runtime/JAXBContextImpl.class Build-Id: 2.1.13
 Classes known to this context:
   [B
   boolean
   byte
   char
-  com.ckwanted.ss.Concat
-  com.ckwanted.ss.ConcatResponse
-  com.ckwanted.ss.EliminarResponseT
-  com.ckwanted.ss.EliminarT
+  com.ckwanted.ss.Eliminar
+  com.ckwanted.ss.EliminarResponse
   com.sun.xml.bind.api.CompositeStructure
   double
   float
@@ -47,49 +45,218 @@ Classes known to this context:
   long
   short
   void
-" with classes [class com.ckwanted.ss.EliminarT, class com.ckwanted.ss.EliminarResponseT, class com.ckwanted.ss.ObjectFactory].
-460  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
-460  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <null> type <interface org.apache.cxf.Bus>
-625  [main] DEBUG org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory  - Creating Jetty HTTP Server Engine for port 8080.
-630  [main] DEBUG org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine  - Configured port 8080 for "http".
-630  [main] INFO  org.apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:8080/ss/p1
-638  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - building handler chain
-639  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - Checking for HandlerChain annotation on com.ckwanted.ss.P1Impl
-639  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - Checking for HandlerChain annotation on com.ckwanted.ss.SimpleService
-639  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - Checking for HandlerChain annotation on com.ckwanted.ss.SimpleService
-639  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - Checking for HandlerChain annotation on java.lang.Object
-639  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - no HandlerChain annotation on class com.ckwanted.ss.P1Impl
-639  [main] DEBUG org.apache.cxf.endpoint.ServerImpl  - Server is starting.
-640  [main] DEBUG org.apache.cxf.transport.http_jetty.JettyHTTPDestination  - registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@268f106e
-640  [main] DEBUG org.apache.cxf.transport.http_jetty.JettyHTTPDestination  - Activating receipt of incoming messages
-649  [main] DEBUG org.eclipse.jetty.util.log  - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
-668  [main] DEBUG org.eclipse.jetty.util.component.Container  - Container org.eclipse.jetty.server.Server@72bc6553 + SelectChannelConnector@localhost:8080 as connector
-671  [main] DEBUG org.eclipse.jetty.util.component.Container  - Container org.eclipse.jetty.server.Server@72bc6553 + org.eclipse.jetty.server.handler.ContextHandlerCollection@2de56eb2 as handler
-672  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting org.eclipse.jetty.server.Server@72bc6553
-673  [main] INFO  org.eclipse.jetty.server.Server  - jetty-8.1.14.v20131031
-684  [main] DEBUG org.eclipse.jetty.util.component.Container  - Container org.eclipse.jetty.server.Server@72bc6553 + qtp11249189{8<=0<=0/254,-1} as threadpool
-684  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting org.eclipse.jetty.server.handler.ContextHandlerCollection@2de56eb2
-690  [main] DEBUG org.eclipse.jetty.server.handler.AbstractHandler  - starting org.eclipse.jetty.server.handler.ContextHandlerCollection@2de56eb2
-690  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED org.eclipse.jetty.server.handler.ContextHandlerCollection@2de56eb2
-690  [main] DEBUG org.eclipse.jetty.server.handler.AbstractHandler  - starting org.eclipse.jetty.server.Server@72bc6553
-690  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting qtp11249189{8<=0<=0/254,-1}
-692  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED qtp11249189{8<=7<=8/254,0}
-692  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting SelectChannelConnector@localhost:8080
-711  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting null/null
-713  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED PooledBuffers [0/1024@6144,0/1024@16384,0/1024@-]/PooledBuffers [0/1024@6144,0/1024@32768,0/1024@-]
-713  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@387a8303
-721  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@387a8303
-721  [qtp11249189-20 Selector0] DEBUG org.eclipse.jetty.io.nio  - Starting Thread[qtp11249189-20 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@32b0d705
-721  [qtp11249189-14 Selector1] DEBUG org.eclipse.jetty.io.nio  - Starting Thread[qtp11249189-14 Selector1,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@31732547
-722  [main] INFO  org.eclipse.jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:8080
-722  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED SelectChannelConnector@localhost:8080
-722  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED org.eclipse.jetty.server.Server@72bc6553
-726  [main] DEBUG org.eclipse.jetty.util.component.Container  - Container o.e.j.s.h.ContextHandler{/ss,null} + org.apache.cxf.transport.http_jetty.JettyHTTPHandler@7dfb0c0f as handler
-726  [main] DEBUG org.eclipse.jetty.util.component.Container  - Container org.eclipse.jetty.server.handler.ContextHandlerCollection@2de56eb2 + o.e.j.s.h.ContextHandler{/ss,null} as handler
-726  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting o.e.j.s.h.ContextHandler{/ss,null}
-734  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting org.apache.cxf.transport.http_jetty.JettyHTTPHandler@7dfb0c0f
-735  [main] DEBUG org.eclipse.jetty.server.handler.AbstractHandler  - starting org.apache.cxf.transport.http_jetty.JettyHTTPHandler@7dfb0c0f
-735  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED org.apache.cxf.transport.http_jetty.JettyHTTPHandler@7dfb0c0f
-735  [main] DEBUG org.eclipse.jetty.server.handler.AbstractHandler  - starting o.e.j.s.h.ContextHandler{/ss,null}
-735  [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED o.e.j.s.h.ContextHandler{/ss,null}
-735  [main] DEBUG org.apache.cxf.endpoint.ServerImpl  - register the server to serverRegistry 
+" with classes [class com.ckwanted.ss.Eliminar, class com.ckwanted.ss.EliminarResponse, class com.ckwanted.ss.ObjectFactory].
+744  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <org.apache.cxf.wsdl11.WSDLManagerImpl/bus> type <interface org.apache.cxf.Bus>
+744  [main] DEBUG org.apache.cxf.resource.DefaultResourceManager  - resolving resource <null> type <interface org.apache.cxf.Bus>
+961  [main] DEBUG org.apache.cxf.transport.http_jetty.JettyHTTPServerEngineFactory  - Creating Jetty HTTP Server Engine for port 8080.
+969  [main] DEBUG org.apache.cxf.transport.http_jetty.JettyHTTPServerEngine  - Configured port 8080 for "http".
+969  [main] INFO  org.apache.cxf.endpoint.ServerImpl  - Setting the server's publish address to be http://localhost:8080/ss/p1
+977  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - building handler chain
+977  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - Checking for HandlerChain annotation on com.ckwanted.ss.p1Impl
+977  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - Checking for HandlerChain annotation on com.ckwanted.ss.SimpleService
+977  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - Checking for HandlerChain annotation on com.ckwanted.ss.SimpleService
+977  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - Checking for HandlerChain annotation on java.lang.Object
+977  [main] DEBUG org.apache.cxf.jaxws.handler.AnnotationHandlerChainBuilder  - no HandlerChain annotation on class com.ckwanted.ss.p1Impl
+978  [main] DEBUG org.apache.cxf.endpoint.ServerImpl  - Server is starting.
+978  [main] DEBUG org.apache.cxf.transport.http_jetty.JettyHTTPDestination  - registering incoming observer: org.apache.cxf.transport.ChainInitiationObserver@4681c175
+978  [main] DEBUG org.apache.cxf.transport.http_jetty.JettyHTTPDestination  - Activating receipt of incoming messages
+986  [main] DEBUG org.eclipse.jetty.util.log  - Logging to org.slf4j.impl.Log4jLoggerAdapter(org.eclipse.jetty.util.log) via org.eclipse.jetty.util.log.Slf4jLog
+1023 [main] DEBUG org.eclipse.jetty.util.component.Container  - Container org.eclipse.jetty.server.Server@7fd50002 + SelectChannelConnector@localhost:8080 as connector
+1029 [main] DEBUG org.eclipse.jetty.util.component.Container  - Container org.eclipse.jetty.server.Server@7fd50002 + org.eclipse.jetty.server.handler.ContextHandlerCollection@4201c465 as handler
+1029 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting org.eclipse.jetty.server.Server@7fd50002
+1032 [main] INFO  org.eclipse.jetty.server.Server  - jetty-8.1.14.v20131031
+1053 [main] DEBUG org.eclipse.jetty.util.component.Container  - Container org.eclipse.jetty.server.Server@7fd50002 + qtp1774720883{8<=0<=0/254,-1} as threadpool
+1053 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting org.eclipse.jetty.server.handler.ContextHandlerCollection@4201c465
+1054 [main] DEBUG org.eclipse.jetty.server.handler.AbstractHandler  - starting org.eclipse.jetty.server.handler.ContextHandlerCollection@4201c465
+1054 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED org.eclipse.jetty.server.handler.ContextHandlerCollection@4201c465
+1054 [main] DEBUG org.eclipse.jetty.server.handler.AbstractHandler  - starting org.eclipse.jetty.server.Server@7fd50002
+1054 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting qtp1774720883{8<=0<=0/254,-1}
+1061 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED qtp1774720883{8<=7<=8/254,0}
+1061 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting SelectChannelConnector@localhost:8080
+1088 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting null/null
+1090 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED PooledBuffers [0/1024@6144,0/1024@16384,0/1024@-]/PooledBuffers [0/1024@6144,0/1024@32768,0/1024@-]
+1090 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@210ab13f
+1099 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED org.eclipse.jetty.server.nio.SelectChannelConnector$ConnectorSelectorManager@210ab13f
+1100 [qtp1774720883-16 Selector0] DEBUG org.eclipse.jetty.io.nio  - Starting Thread[qtp1774720883-16 Selector0,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@58e51e32
+1100 [qtp1774720883-19 Selector1] DEBUG org.eclipse.jetty.io.nio  - Starting Thread[qtp1774720883-19 Selector1,5,main] on org.eclipse.jetty.io.nio.SelectorManager$1@57fb7577
+1100 [main] INFO  org.eclipse.jetty.server.AbstractConnector  - Started SelectChannelConnector@localhost:8080
+1100 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED SelectChannelConnector@localhost:8080
+1100 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED org.eclipse.jetty.server.Server@7fd50002
+1105 [main] DEBUG org.eclipse.jetty.util.component.Container  - Container o.e.j.s.h.ContextHandler{/ss,null} + org.apache.cxf.transport.http_jetty.JettyHTTPHandler@5c86a017 as handler
+1105 [main] DEBUG org.eclipse.jetty.util.component.Container  - Container org.eclipse.jetty.server.handler.ContextHandlerCollection@4201c465 + o.e.j.s.h.ContextHandler{/ss,null} as handler
+1105 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting o.e.j.s.h.ContextHandler{/ss,null}
+1114 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - starting org.apache.cxf.transport.http_jetty.JettyHTTPHandler@5c86a017
+1114 [main] DEBUG org.eclipse.jetty.server.handler.AbstractHandler  - starting org.apache.cxf.transport.http_jetty.JettyHTTPHandler@5c86a017
+1114 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED org.apache.cxf.transport.http_jetty.JettyHTTPHandler@5c86a017
+1114 [main] DEBUG org.eclipse.jetty.server.handler.AbstractHandler  - starting o.e.j.s.h.ContextHandler{/ss,null}
+1114 [main] DEBUG org.eclipse.jetty.util.component.AbstractLifeCycle  - STARTED o.e.j.s.h.ContextHandler{/ss,null}
+1114 [main] DEBUG org.apache.cxf.endpoint.ServerImpl  - register the server to serverRegistry 
+15167 [qtp1774720883-16 Selector0] DEBUG org.eclipse.jetty.io.nio  - created SCEP@53a8898{l(/127.0.0.1:49578)<->r(/127.0.0.1:8080),s=0,open=true,ishut=false,oshut=false,rb=false,wb=false,w=true,i=0}-{AsyncHttpConnection@675d0a8d,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=-14,l=0,c=0},r=0}
+15171 [qtp1774720883-18] DEBUG org.eclipse.jetty.http.HttpParser  - filled 1149/1149
+15177 [qtp1774720883-18 - /ss/p1] DEBUG org.eclipse.jetty.server.Server  - REQUEST /ss/p1 on AsyncHttpConnection@675d0a8d,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=2,l=3,c=871},r=1
+15177 [qtp1774720883-18 - /ss/p1] DEBUG org.eclipse.jetty.server.handler.ContextHandler  - scope null||/ss/p1 @ o.e.j.s.h.ContextHandler{/ss,null}
+15177 [qtp1774720883-18 - /ss/p1] DEBUG org.eclipse.jetty.server.handler.ContextHandler  - context=/ss||/p1 @ o.e.j.s.h.ContextHandler{/ss,null}
+15197 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.transport.http.AbstractHTTPDestination  - Create a new message for processing
+15206 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.transport.http.Headers  - Request Headers: {Accept=[*/*], Cache-Control=[no-cache], connection=[keep-alive], Content-Length=[871], content-type=[text/xml; charset=UTF-8], Host=[localhost:8080], Pragma=[no-cache], SOAPAction=["http://ckwanted.com/ss/NewOperation"], User-Agent=[Apache CXF 3.0.0-milestone2]}
+15213 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@5c31ac1f to phase receive
+15213 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.ServiceInvokerInterceptor@45a42a40 to phase invoke
+15213 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@2f339464 to phase post-invoke
+15213 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.OneWayProcessorInterceptor@700e6986 to phase pre-logical
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@218e72cc to phase post-logical
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxws.interceptors.HolderInInterceptor@459caa97 to phase pre-invoke
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@763f96f4 to phase pre-invoke
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.frontend.WSDLGetInterceptor@75fe93ec to phase read
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.ws.mex.MEXInInterceptor@27b4978d to phase pre-protocol
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@75c49fe to phase receive
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.StaxInInterceptor@ddef7d7 to phase post-stream
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@c3e6473 to phase read
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor@fb58286 to phase unmarshal
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@6a432937 to phase unmarshal
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@10d91be7 to phase read
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@6fbbf873 to phase read
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@4cb9e6b0 to phase post-protocol
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@3f406481 to phase pre-protocol
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.javascript.JavascriptGetInterceptor@679e46ad to phase read
+15214 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxb.attachment.JAXBAttachmentSchemaValidationHack@5756424d to phase post-protocol
+15215 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.transport.https.CertConstraintsInterceptor@7d3f2894 to phase pre-stream
+15215 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@6429a3ba was created. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  pre-stream [CertConstraintsInterceptor]
+  post-stream [StaxInInterceptor]
+  read [WSDLGetInterceptor, ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor, JavascriptGetInterceptor]
+  pre-protocol [MEXInInterceptor, MustUnderstandInterceptor]
+  post-protocol [CheckFaultInterceptor, JAXBAttachmentSchemaValidationHack]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  pre-logical [OneWayProcessorInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [SwAInInterceptor, HolderInInterceptor]
+  invoke [ServiceInvokerInterceptor]
+  post-invoke [OutgoingChainInterceptor]
+
+15215 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyInInterceptor@5c31ac1f
+15217 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentInInterceptor@75c49fe
+15225 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.transport.https.CertConstraintsInterceptor@7d3f2894
+15225 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInInterceptor@ddef7d7
+15278 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.StaxInEndingInterceptor@2c6663a9 to phase pre-invoke
+15279 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@6429a3ba was modified. Current flow:
+  receive [PolicyInInterceptor, AttachmentInInterceptor]
+  pre-stream [CertConstraintsInterceptor]
+  post-stream [StaxInInterceptor]
+  read [WSDLGetInterceptor, ReadHeadersInterceptor, SoapActionInInterceptor, StartBodyInterceptor, JavascriptGetInterceptor]
+  pre-protocol [MEXInInterceptor, MustUnderstandInterceptor]
+  post-protocol [CheckFaultInterceptor, JAXBAttachmentSchemaValidationHack]
+  unmarshal [DocLiteralInInterceptor, SoapHeaderInterceptor]
+  pre-logical [OneWayProcessorInterceptor]
+  post-logical [WrapperClassInInterceptor]
+  pre-invoke [StaxInEndingInterceptor, SwAInInterceptor, HolderInInterceptor]
+  invoke [ServiceInvokerInterceptor]
+  post-invoke [OutgoingChainInterceptor]
+
+15279 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.frontend.WSDLGetInterceptor@75fe93ec
+15279 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.ReadHeadersInterceptor@10d91be7
+15286 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapActionInInterceptor@c3e6473
+15286 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.StartBodyInterceptor@6fbbf873
+15286 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.javascript.JavascriptGetInterceptor@679e46ad
+15286 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.ws.mex.MEXInInterceptor@27b4978d
+15286 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.MustUnderstandInterceptor@3f406481
+15287 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.CheckFaultInterceptor@4cb9e6b0
+15287 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxb.attachment.JAXBAttachmentSchemaValidationHack@5756424d
+15287 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.wsdl.interceptors.DocLiteralInInterceptor@fb58286
+15303 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderInterceptor@6a432937
+15303 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.OneWayProcessorInterceptor@700e6986
+15303 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.WrapperClassInInterceptor@218e72cc
+15309 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxInEndingInterceptor@2c6663a9
+15309 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAInInterceptor@763f96f4
+15309 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.HolderInInterceptor@459caa97
+15309 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.ServiceInvokerInterceptor@45a42a40
+15320 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.OutgoingChainInterceptor@2f339464
+15321 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.interceptor.OutgoingChainInterceptor  - Interceptors contributed by bus: [org.apache.cxf.ws.policy.PolicyOutInterceptor@2ff81a55]
+15321 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.interceptor.OutgoingChainInterceptor  - Interceptors contributed by service: []
+15321 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.interceptor.OutgoingChainInterceptor  - Interceptors contributed by endpoint: [org.apache.cxf.interceptor.MessageSenderInterceptor@2fb4de80, org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@6ace0dc0, org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@39b296c3, org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@56f70912]
+15321 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.interceptor.OutgoingChainInterceptor  - Interceptors contributed by binding: [org.apache.cxf.interceptor.AttachmentOutInterceptor@5f3e9d92, org.apache.cxf.interceptor.StaxOutInterceptor@45042bb8, org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@68ada955, org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@6fc92cb, org.apache.cxf.wsdl.interceptors.BareOutInterceptor@2d054d8b, org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@4938fa78, org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@4c5a150b]
+15321 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.interceptor.OutgoingChainInterceptor  - Interceptors contributed by databinding: []
+15321 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@2ff81a55 to phase setup
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@2fb4de80 to phase prepare-send
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@6ace0dc0 to phase pre-logical
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@39b296c3 to phase pre-logical
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@56f70912 to phase pre-logical
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@5f3e9d92 to phase pre-stream
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.StaxOutInterceptor@45042bb8 to phase pre-stream
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@68ada955 to phase pre-logical
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@6fc92cb to phase marshal
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.wsdl.interceptors.BareOutInterceptor@2d054d8b to phase marshal
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@4938fa78 to phase post-logical
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@4c5a150b to phase write
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@2ed2ac81 was created. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+
+15322 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.ws.policy.PolicyOutInterceptor@2ff81a55
+15323 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.HolderOutInterceptor@56f70912
+15323 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.jaxws.interceptors.HolderOutInterceptor  - op: [OperationInfo: {http://ckwanted.com/ss}eliminar]
+15323 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.jaxws.interceptors.HolderOutInterceptor  - op.hasOutput(): true
+15323 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.jaxws.interceptors.HolderOutInterceptor  - op.getOutput().size(): 1
+15323 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.SwAOutInterceptor@6ace0dc0
+15324 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.jaxws.interceptors.WrapperClassOutInterceptor@39b296c3
+15328 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapHeaderOutFilterInterceptor@68ada955
+15328 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapPreProtocolOutInterceptor@4938fa78
+15328 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor@2fb4de80
+15328 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@59988a9b to phase prepare-send-ending
+15328 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@2ed2ac81 was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+15328 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.AttachmentOutInterceptor@5f3e9d92
+15328 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutInterceptor@45042bb8
+15339 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@48946fba to phase pre-stream-ending
+15339 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@2ed2ac81 was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+15339 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor@4c5a150b
+15340 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Adding interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@11fa37e9 to phase write-ending
+15340 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Chain org.apache.cxf.phase.PhaseInterceptorChain@2ed2ac81 was modified. Current flow:
+  setup [PolicyOutInterceptor]
+  pre-logical [HolderOutInterceptor, SwAOutInterceptor, WrapperClassOutInterceptor, SoapHeaderOutFilterInterceptor]
+  post-logical [SoapPreProtocolOutInterceptor]
+  prepare-send [MessageSenderInterceptor]
+  pre-stream [AttachmentOutInterceptor, StaxOutInterceptor]
+  write [SoapOutInterceptor]
+  marshal [WrappedOutInterceptor, BareOutInterceptor]
+  write-ending [SoapOutEndingInterceptor]
+  pre-stream-ending [StaxOutEndingInterceptor]
+  prepare-send-ending [MessageSenderEndingInterceptor]
+
+15340 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.wsdl.interceptors.WrappedOutInterceptor@6fc92cb
+15340 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.wsdl.interceptors.BareOutInterceptor@2d054d8b
+15357 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.binding.soap.interceptor.SoapOutInterceptor$SoapOutEndingInterceptor@11fa37e9
+15357 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.StaxOutEndingInterceptor@48946fba
+15357 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.phase.PhaseInterceptorChain  - Invoking handleMessage on interceptor org.apache.cxf.interceptor.MessageSenderInterceptor$MessageSenderEndingInterceptor@59988a9b
+15362 [qtp1774720883-18 - /ss/p1] DEBUG org.apache.cxf.transport.http.AbstractHTTPDestination  - Finished servicing http request on thread: Thread[qtp1774720883-18 - /ss/p1,5,main]
+15362 [qtp1774720883-18 - /ss/p1] DEBUG org.eclipse.jetty.server.Server  - RESPONSE /ss/p1  200 handled=true
+15363 [qtp1774720883-18] DEBUG org.eclipse.jetty.server.AsyncHttpConnection  - Enabled read interest SCEP@53a8898{l(/127.0.0.1:49578)<->r(/127.0.0.1:8080),s=1,open=true,ishut=false,oshut=false,rb=false,wb=false,w=true,i=0r}-{AsyncHttpConnection@675d0a8d,g=HttpGenerator{s=4,h=0,b=0,c=-1},p=HttpParser{s=0,l=3,c=871},r=1}
+15365 [qtp1774720883-18] DEBUG org.eclipse.jetty.http.HttpParser  - filled 0/0
+16035 [qtp1774720883-18] DEBUG org.eclipse.jetty.io.nio.ChannelEndPoint  - ishut SCEP@53a8898{l(/127.0.0.1:49578)<->r(/127.0.0.1:8080),s=1,open=true,ishut=false,oshut=false,rb=false,wb=false,w=true,i=1r}-{AsyncHttpConnection@675d0a8d,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=-14,l=0,c=-3},r=1}
+16035 [qtp1774720883-18] DEBUG org.eclipse.jetty.http.HttpParser  - filled -1/0
+16036 [qtp1774720883-18] DEBUG org.eclipse.jetty.server.AsyncHttpConnection  - Disabled read interest while writing response SCEP@53a8898{l(/127.0.0.1:49578)<->r(/127.0.0.1:8080),s=1,open=true,ishut=true,oshut=false,rb=false,wb=false,w=true,i=1r}-{AsyncHttpConnection@675d0a8d,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=0,l=0,c=-3},r=1}
+16037 [qtp1774720883-18] DEBUG org.eclipse.jetty.io.nio.ChannelEndPoint  - close SCEP@53a8898{l(/127.0.0.1:49578)<->r(/127.0.0.1:8080),s=1,open=true,ishut=true,oshut=false,rb=false,wb=false,w=true,i=1r}-{AsyncHttpConnection@675d0a8d,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=0,l=0,c=-3},r=1}
+16039 [qtp1774720883-16 Selector0] DEBUG org.eclipse.jetty.io.nio  - destroyEndPoint SCEP@53a8898{l(null)<->r(0.0.0.0/0.0.0.0:8080),s=0,open=false,ishut=true,oshut=true,rb=false,wb=false,w=true,i=1!}-{AsyncHttpConnection@675d0a8d,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=0,l=0,c=-3},r=1}
+16039 [qtp1774720883-16 Selector0] DEBUG org.eclipse.jetty.server.AbstractHttpConnection  - closed AsyncHttpConnection@675d0a8d,g=HttpGenerator{s=0,h=-1,b=-1,c=-1},p=HttpParser{s=0,l=0,c=-3},r=1

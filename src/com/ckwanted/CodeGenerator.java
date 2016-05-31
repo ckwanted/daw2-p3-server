@@ -12,7 +12,7 @@ public class CodeGenerator {
 			"src/main/resources/SimpleService.wsdl"
 		});
 		
-		System.out.println("Archivos generados correctamente ...");
+		System.out.println("Archivos generados correctamente en el servidor...");
 
 	}
 
